@@ -8,17 +8,15 @@ import './App.css';
 
 Amplify.configure(awsconfig);
 
-function App() {
+function App(signOut, user) {
   return (
   <Authenticator>
     {({ signOut, user }) => (
     <div className="App">
-      <p>
-        Hey {user.username}, welcome to my channel, with auth!
-      </p>
       <header className="App-header">
-        <h1>Welcome to Cypress Labs</h1>
+        <h1>Welcome to Cypress Labs, {user.username}</h1>
       </header>
+      <button onClick={signOut}>Sign out</button>
     </div>
     )}
     </Authenticator>
