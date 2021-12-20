@@ -6,6 +6,8 @@ import {Authenticator} from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
 import './App.css';
 
+import { NavBar } from './ui-components';
+
 Amplify.configure(awsconfig);
 
 function App(signOut, user) {
@@ -13,6 +15,7 @@ function App(signOut, user) {
   <Authenticator>
     {({ signOut, user }) => (
     <div className="App">
+      <NavBar />
       <header className="App-header">
         <h1>Welcome to Cypress Labs, {user.username}</h1>
       </header>

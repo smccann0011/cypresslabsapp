@@ -1,26 +1,26 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-cypresslabsapp-dev-191832-authRole",
-            "UnauthRoleArn": "arn:aws:iam::424653383878:role/amplify-cypresslabsapp-dev-191832-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::424653383878:role/amplify-cypresslabsapp-dev-191832-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-cypresslabsapp-dev-191832-deployment",
-            "UnauthRoleName": "amplify-cypresslabsapp-dev-191832-unauthRole",
-            "StackName": "amplify-cypresslabsapp-dev-191832",
-            "StackId": "arn:aws:cloudformation:us-east-1:424653383878:stack/amplify-cypresslabsapp-dev-191832/84ecfe70-6143-11ec-b5d2-12500f8848b9",
-            "AmplifyAppId": "dt81imvwtzw03"
-        },
-        "categories": {
-            "auth": {
-                "cypresslabsapp9f86b4fe": {}
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "dt81imvwtzw03",
-                    "type": "cicd"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cypresslabsapp-dev-191832-authRole",
+      "UnauthRoleArn": "arn:aws:iam::424653383878:role/amplify-cypresslabsapp-dev-191832-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::424653383878:role/amplify-cypresslabsapp-dev-191832-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cypresslabsapp-dev-191832-deployment",
+      "UnauthRoleName": "amplify-cypresslabsapp-dev-191832-unauthRole",
+      "StackName": "amplify-cypresslabsapp-dev-191832",
+      "StackId": "arn:aws:cloudformation:us-east-1:424653383878:stack/amplify-cypresslabsapp-dev-191832/84ecfe70-6143-11ec-b5d2-12500f8848b9",
+      "AmplifyAppId": "dt81imvwtzw03"
+    },
+    "categories": {
+      "auth": {
+        "cypresslabsapp9f86b4fe": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dt81imvwtzw03",
+          "type": "cicd"
         }
+      }
     }
+  }
 }
