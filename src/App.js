@@ -7,24 +7,24 @@ import './App.css';
 
 Amplify.configure(awsconfig);
 
-//function App() {
-//  return (
-//    <div className="App">
-//      <header className="App-header">
-//        <h1>Welcome to Cypress Labs</h1>
-//      </header>
-//    </div>
-//  );
-//}
-
-const App = () => (
-  <AmplifyAuthenticator>
-    <div>
-      <h1>Welcome to Cypress Labs</h1>
-      <AmplifySignOut />
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to Cypress Labs</h1>
+      </header>
     </div>
-  </AmplifyAuthenticator>
-);
+  );
+}
+
+//const App = () => (
+//  <AmplifyAuthenticator>
+//    <div>
+//      <h1>Welcome to Cypress Labs</h1>
+//      <AmplifySignOut />
+//    </div>
+//  </AmplifyAuthenticator>
+//);
 
 //export default withAuthenticator (App, {includeGreetings: true});
 export default withAuthenticator(App);
