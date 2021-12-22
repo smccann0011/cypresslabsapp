@@ -20,6 +20,12 @@
           "appId": "dt81imvwtzw03",
           "type": "cicd"
         }
+      },
+      "function": {
+        "cryptofunction": {
+          "deploymentBucketName": "amplify-cypresslabsapp-dev-191832-deployment",
+          "s3Key": "amplify-builds/cryptofunction-52666734495653783649-build.zip"
+        }
       }
     }
   }

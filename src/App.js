@@ -7,6 +7,7 @@ import '@aws-amplify/ui-react/styles.css';
 import './App.css';
 
 import { NavBar } from './ui-components';
+import { SideBar } from './ui-components';
 
 Amplify.configure(awsconfig);
 
@@ -16,6 +17,7 @@ function App(signOut, user) {
     {({ signOut, user }) => (
     <div className="App">
       <NavBar />
+      <SideBar />
       <header className="App-header">
         <h1>Welcome to Cypress Labs, {user.username}</h1>
       </header>
