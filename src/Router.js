@@ -14,16 +14,18 @@ import Container from './Container';
 function Router() {
     const [current, setCurrent] = useState('home')
 
-    //useEffect( () => {    
-    //    setRoute()
-    //    window.addEventListener('hashchange', setRoute)
-    //    return () => window.removeEventListener('hashchange', setRoute)        
-    //})
+    useEffect( () => {    
+        setRoute()
+        window.addEventListener('hashchange', setRoute)
+        return () => window.removeEventListener('hashchange', setRoute)        
+    })
 
     function setRoute() {
-        console.log("Set Route: "+ window.location)
+        //console.log("Set Route: "+ window.location)
         console.log("Set Route href: "+ window.location.href)
+        console.log("Set Route pathname: "+ window.location.pathname)
         const location = window.location.href.split('/')
+        console.log("Set Route location: "+ location)
         const pathname = location[location.length-1]
         console.log("Set Route Pathname: "+ pathname)
         setCurrent(pathname ? pathname : 'home')
