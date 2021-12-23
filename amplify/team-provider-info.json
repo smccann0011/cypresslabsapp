@@ -24,7 +24,7 @@
       "function": {
         "cryptofunction": {
           "deploymentBucketName": "amplify-cypresslabsapp-dev-191832-deployment",
-          "s3Key": "amplify-builds/cryptofunction-52666734495653783649-build.zip"
+          "s3Key": "amplify-builds/cryptofunction-34426e6b566635627475-build.zip"
         }
       }
     }

@@ -9,7 +9,7 @@ function Home() {
         <Authenticator>
         {({ signOut, user }) => (
             <div>
-                <h1 style={heading}>Home Page</h1>
+                <h1 style={heading}>Cypress Labs Home Page</h1>
             </div>
         )}
         </Authenticator>
