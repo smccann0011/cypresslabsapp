@@ -6,8 +6,8 @@ const heading = {fontSize: 44, fontWeight: 300, marginBottom: 5}
 
 function Stock() {
     return (
-        <Authenticator>
-        {({ signOut, user }) => (
+        //<Authenticator>
+        //{({ signOut, user }) => (
             <div className="Stock">
                 <h2 style={heading}>Stock Agent</h2>
                 <div>                
@@ -28,8 +28,8 @@ function Stock() {
                     </table>
                 </div>
             </div>
-        )}
-        </Authenticator>
+        //)}
+        //</Authenticator>
     )
 }
 
