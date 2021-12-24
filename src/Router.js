@@ -23,18 +23,19 @@ function Router() {
     function setRoute() {
         //console.log("Set Route: "+ window.location)
         console.log("Set Route href: "+ window.location.href)
-        const location1 = window.location.href.split('/')
-        console.log("Set Route location: "+ location1)
-
         console.log("Set Route pathname: "+ window.location.pathname)
+
+        const location1 = window.location.href.split('/')
+        console.log("Set Route location1: "+ location1)
+
         const location2 = window.location.pathname.split('/')
-        console.log("Set Route location: "+ location2)
+        console.log("Set Route location2: "+ location2)
 
-        const pathname1 = location1[location1.length-1]
-        console.log("Set Route Pathname: "+ pathname1)
+        const pathname1 = location1[location1.length-2]
+        console.log("Set Route Pathname1: "+ pathname1)
 
-        const pathname2 = location2[location2.length-1]
-        console.log("Set Route Pathname: "+ pathname2)
+        const pathname2 = location2[location2.length-2]
+        console.log("Set Route Pathname2: "+ pathname2)
 
         setCurrent(pathname2 ? pathname2 : 'home')
     }
