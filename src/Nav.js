@@ -12,20 +12,20 @@ const Nav = (props) => {
     var linkStatus4 = (current === 'stock'  ? 'nav-link active' : 'nav-link')
 
     return (
-        //<a className="nav-link disabled" href="/user">{user.username}</a>
-        //<button onClick={signOut}>Sign out</button>
-        //<Authenticator>
-        //{({ signOut, user }) => (
+        <Authenticator>
+        {({ signOut, user }) => (
         <div>
             <nav className="nav nav-pills">
                 <a className={linkStatus1} href="/">Home</a>
                 <a className={linkStatus2} href="/todo">ToDo App</a>
                 <a className={linkStatus3} href="/crypto">Crypto Agent</a>
                 <a className={linkStatus4} href="/stock">Stock Agent</a>
+                <a className="nav-link disabled" href="/user">{user.username}</a>
+                <button onClick={signOut}>Sign out</button>
             </nav>
         </div>
-        //)}
-        //</Authenticator>
+        )}
+        </Authenticator>
     )
 }
 

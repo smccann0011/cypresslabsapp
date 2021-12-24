@@ -25,8 +25,8 @@ function Crypto() {
     //})
 
     return (
-        //<Authenticator>
-        //{({ signOut, user }) => (
+        <Authenticator>
+        {({ signOut, user }) => (
             <div className="Crypto">
                 <h2 style={heading}>Crypto Agent</h2>
                 <div>
@@ -66,8 +66,8 @@ function Crypto() {
                     </table>
                 </div>
             </div>
-        //)}
-        //</Authenticator>
+        )}
+        </Authenticator>
     )
 }
 

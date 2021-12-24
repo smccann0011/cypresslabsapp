@@ -1,5 +1,5 @@
 import React from 'react';
-//import {withAuthenticator} from '@aws-amplify/ui-react';
+import {Authenticator, withAuthenticator} from '@aws-amplify/ui-react';
 //import {Auth} from 'aws-amplify';
 //import {Button} from 'antd';
 
@@ -10,11 +10,12 @@ const titleStyle = {
 
 function Admin() {
     return(
+        <Authenticator>
         <div>
             <h1 style={titleStyle}>Admin Page</h1>
         </div>
+        </Authenticator>
     )
 }
 
-//export default withAuthenticator(Admin)
-export default Admin
+export default withAuthenticator(Admin)
